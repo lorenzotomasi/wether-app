@@ -1,0 +1,44 @@
+.content-background {
+  background: linear-gradient(
+    var(--content-background-angle),
+    var(--active-condition-day--primary) 0%, 
+    var(--active-condition-day--secondary) 35%,
+    var(--active-condition-day--tertiary) 100%
+  ), 
+  linear-gradient(
+    calc(var(--content-background-angle) + 180deg),
+    var(--active-condition-day--primary) 0%,
+    var(--active-condition-day--secondary) 35%, 
+    var(--active-condition-day--tertiary) 100%
+  );
+  background-blend-mode: overlay;
+  background-size: 150% 150%;
+  animation-name: background-shift;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background-shift {
+  0% {
+    background-position: 0% var(--content-background-middle-percentage-start);
+  }
+  15% {
+    background-position: var(--content-background-middle-percentage-start) var(--content-background-middle-percentage);
+  }
+  30% {
+    background-position: var(--content-background-middle-percentage-end) 100%;
+  }
+  45% {
+    background-position: 100% var(--content-background-middle-percentage-end);
+  }
+  60% {
+    background-position: var(--content-background-middle-percentage-end) var(--content-background-middle-percentage);
+  }
+  75% {
+    background-position: var(--content-background-middle-percentage) var(--content-background-middle-percentage-start);
+  }
+  100% {
+    background-position: var(--content-background-middle-percentage-start) 0%;
+  }
+}

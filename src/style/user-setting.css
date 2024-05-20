@@ -1,0 +1,23 @@
+.user-setting-container {
+  align-self: center;
+  position: relative;
+
+  button {
+    background-color: var(--wether-information-card-background);
+    backdrop-filter: blur(var(--wether-information-card-blur));
+    -webkit-backdrop-filter: blur(var(--wether-information-card-blur));
+    padding: 8px;
+    border-width: 0px;
+    border-radius: 16px;
+    font-size: 1rem;
+  }
+  .user-setting-content {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background-color: var(--wether-information-card-background);
+    backdrop-filter: blur(var(--wether-information-card-blur));
+    -webkit-backdrop-filter: blur(var(--wether-information-card-blur));
+    border-radius: 16px;
+  }
+}

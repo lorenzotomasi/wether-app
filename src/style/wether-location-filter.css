@@ -1,0 +1,58 @@
+.wether-location-filter {
+  display: flex;
+  position: relative;
+  .wether-location-filter-input {
+    background-color: var(--wether-information-card-background);
+    border-top-left-radius: var(--wether-information-card-border-radius);
+    border-bottom-left-radius: var(--wether-information-card-border-radius);
+    backdrop-filter: blur(var(--wether-information-card-blur));
+    -webkit-backdrop-filter: blur(var(--wether-information-card-blur));
+    border: 0px;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding-inline: 8px;
+    padding: 4px;
+  }
+  .wether-location-filter-suggestion ~ .wether-location-filter-input {
+    border-bottom-left-radius: 0;
+  }
+  .wether-location-filter-suggestion {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 16px;
+    width: calc(100% - calc(16px * 2));
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.8rem;
+
+    background-color: var(--wether-information-card-background);
+    border-bottom-left-radius: var(--wether-information-card-border-radius);
+    border-bottom-right-radius: var(--wether-information-card-border-radius);
+    backdrop-filter: blur(var(--wether-information-card-blur));
+    -webkit-backdrop-filter: blur(var(--wether-information-card-blur));
+  }
+  input:focus-visible {
+    outline: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  .wether-location-filter-input:focus,
+  .wether-location-filter-input:focus-visible,
+  .wether-location-filter-input:hover {
+    border-color: var(--wether-information-card-background);
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--wether-information-card-background);
+    backdrop-filter: blur(var(--wether-information-card-blur));
+    -webkit-backdrop-filter: blur(var(--wether-information-card-blur));
+    border-top-right-radius: var(--wether-information-card-border-radius);
+    border-bottom-right-radius: var(--wether-information-card-border-radius);
+  }
+  .wether-location-filter-suggestion ~ button {
+    border-bottom-right-radius: 0px;
+  }
+}

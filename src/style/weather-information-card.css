@@ -1,0 +1,53 @@
+.wether-information-card {
+  background-color: var(--wether-information-card-background);
+  backdrop-filter: blur(var(--wether-information-card-blur));
+  -webkit-backdrop-filter: blur(var(--wether-information-card-blur));
+  border-radius: 16px;
+  padding: 40px;
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .wether-information-card__primary-content,
+  .wether-information-card__secondary-content {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .wether-information-precipitation,
+  .wether-information-card__primary-content {
+    font-size: 2rem;
+  }
+
+  .wether-information-precipitation,
+  .wether-information-humidity,
+  .wether-information-pressure,
+  .wether-information-temperature {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  .wether-information-wind {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    .wether-information-wind-speed,
+    .wether-information-wind-direction {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}
+
+.wether-information-card-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

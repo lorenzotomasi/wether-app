@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --white: 255,255,255;
+  --gray: 211,211,211;
+
+  /* Wether condition backgrounds */
+
+  /* Sunny clear day */
+  --sunny-clear-day--primary: #FFD700;
+  --sunny-clear-day--secondary: #FFA500;
+  --sunny-clear-day--tertiary: #FF6347;
+
+  /* Cloudy */
+  --cloudy-day--primary: #B0C4DE;
+  --cloudy-day--secondary: #778899;
+  --cloudy-day--tertiary: #A9A9A9;
+
+  /* Rainy */
+  --rainy-day--primary: #4682B4;
+  --rainy-day--secondary: #708090;
+  --rainy-day--tertiary: #2F4F4F;
+
+  /* Thunder storm */
+  --thunder-storm-day--primary: #000080;
+  --thunder-storm-day--secondary: #696969;
+  --thunder-storm-day--tertiary: #800000;
+
+  /* Snowy */
+  --snowy-day--primary: #FFFFFF;
+  --snowy-day--secondary: #ADD8E6;
+  --snowy-day--tertiary: #B0E0E6;
+
+  --active-condition-day--primary: var(--sunny-clear-day--primary);
+  --active-condition-day--secondary: var(--sunny-clear-day--secondary);
+  --active-condition-day--tertiary: var(--sunny-clear-day--tertiary);
+
+  /* Elements */
+
+  --wether-information-card-opacity: 0.20;
+  --wether-information-card-background: rgba(var(--gray), var(--wether-information-card-opacity));
+  --wether-information-card-blur: 7px;
+  --wether-information-card-border-radius: 16px;
+
+  --content-background-middle-percentage: 25%;
+  --content-background-middle-percentage-start: 5%;
+  --content-background-middle-percentage-end: 75%;
+  --content-background-angle: 143deg;
+}
